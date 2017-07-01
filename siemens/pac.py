@@ -11,12 +11,12 @@ class PAC(object):
 
     def __init__(self):
         self.power = Power()
-        self.L1 = Phase()
-        self.L2 = Phase()
-        self.L3 = Phase()
-        self.tariff_1 = Tariff()
-        self.tariff_2 = Tariff()
-        self.frequency = float('nan')
+        #self.L1 = Phase()
+        #self.L2 = Phase()
+        #self.L3 = Phase()
+        #self.tariff_1 = Tariff()
+        #self.tariff_2 = Tariff()
+        #self.frequency = float('nan')
 
     def _from_float(self, values):
         return [unpack(str('>f'), pack(str('>HH'), *values[i:i + 2]))[0] for i in range(0, len(values), 2)]
