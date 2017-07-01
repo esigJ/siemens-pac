@@ -97,18 +97,18 @@ class PAC(object):
     def as_dict(self, replace_nan=False):
         return {
             'power': self.power.as_dict(replace_nan=replace_nan),
-            'phases': {
-                'L1': self.L1.as_dict(replace_nan=replace_nan),
-                'L2': self.L2.as_dict(replace_nan=replace_nan),
-                'L3': self.L3.as_dict(replace_nan=replace_nan),
-            },
-            'energy': self.energy.as_dict(replace_nan=replace_nan),
-            'balance': self.energy_balance.as_dict(replace_nan=replace_nan),
-            'tariffs': [
-                self.tariff_1.as_dict(replace_nan=replace_nan),
-                self.tariff_2.as_dict(replace_nan=replace_nan),
-            ],
-            'frequency': zero_if_nan(self.frequency, replace_nan),
+            #'phases': {
+            #    'L1': self.L1.as_dict(replace_nan=replace_nan),
+            #    'L2': self.L2.as_dict(replace_nan=replace_nan),
+            #    'L3': self.L3.as_dict(replace_nan=replace_nan),
+            #},
+            #'energy': self.energy.as_dict(replace_nan=replace_nan),
+            #'balance': self.energy_balance.as_dict(replace_nan=replace_nan),
+            #'tariffs': [
+            #    self.tariff_1.as_dict(replace_nan=replace_nan),
+            #    self.tariff_2.as_dict(replace_nan=replace_nan),
+            #],
+            #'frequency': zero_if_nan(self.frequency, replace_nan),
         }
 
 
